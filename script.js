@@ -1,5 +1,7 @@
 let video = document.getElementById("video");
 let audio = document.getElementById("audio");
+let disp = document.getElementById("med2");
+disp.play();
 
 
 // random = Math.floor(Math.random() * 1);
@@ -26,6 +28,7 @@ function playpauseFunc(){
         video.play();
         audio.play();
         btnPP.innerHTML ="Pause &#9208;";
+        disp.play();
     }
 
     else{
@@ -33,6 +36,7 @@ function playpauseFunc(){
         video.pause();
         audio.pause();
         btnPP.innerHTML ="Play &#9658;";
+        disp.play();
 
     }
 }
@@ -44,5 +48,6 @@ function stopFunc(){
     video.currentTime = 0;
     btnPP.innerHTML = "Play &#9658;";
     location.reload();
+    disp.play();
 }
 
