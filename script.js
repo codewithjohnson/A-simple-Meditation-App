@@ -2,20 +2,18 @@ let video = document.getElementById("video");
 let audio = document.getElementById("audio");
 
 
-random = Math.floor(Math.random() * 2);
+// random = Math.floor(Math.random() * 1);
 
-src1V = "./media/beach.mp4";
-src1A = "/media/beach.mp3";
 
 src2V = "./media/nightV.mp4";
 src2A = "./media/nightA.mp4";
 
 
-video_src = [src1V,src2V];
-audio_src = [src1A,src2A];
+video_src = [src2V];
+audio_src = [src2A];
 
-video.src = video_src[random];
-audio.src = audio_src[random];
+video.src = video_src[0];
+audio.src = audio_src[0];
 
 let btnPP = document.getElementById("btn-left");
 let stop = document.getElementById("btn-right");
