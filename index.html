@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+   
+</head>
+<body>
+    <div class="main">
+        <div class= "video-cont">
+            <div class = "up-video">
+                <video loop  type="video/mp4" id="video" class="video"></video>
+                <audio loop  id="audio" type ="audio/mp4"></audio>
+            </div>
+            
+        </div>
+
+        <div class="down">
+            <div class="left">
+                <button class= "btn-l" id="btn-left" onclick="playpauseFunc()">Play &#9658</button>
+            </div>
+
+            <div class="med">
+                <video src="./media/med.mp4" autoplay  loop type = video/mp4 class="med2"></video>
+            </div>
+
+            <div class="right">
+                <button class="btn-r" id="btn-right"  onclick="stopFunc()">Stop  &#9611</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
