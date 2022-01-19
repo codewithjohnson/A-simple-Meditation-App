@@ -139,3 +139,21 @@ body {
     margin: 10px;
   }
 }
+
+@media screen and (max-width: 600px) {
+    .down {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+  }
+
+  .btn-l {
+    margin: 10px;
+  }
+
+  .btn-r{
+    margin: 10px;
+  }
+}
