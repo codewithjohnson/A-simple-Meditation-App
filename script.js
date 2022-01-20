@@ -60,6 +60,5 @@ function shuffle(){
     video.play();
     audio.play();
     btnPP.innerHTML ="Pause &#9208;";
-    disp.play();
 
 }
