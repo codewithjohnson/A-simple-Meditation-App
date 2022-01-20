@@ -42,12 +42,12 @@ function playpauseFunc(){
 }
 
 function stopFunc(){
-    playpauseFunc();
+    // playpauseFunc();
     video.pause();
     audio.pause();
     video.currentTime = 0;
     btnPP.innerHTML = "Play &#9658;";
-    location.reload();
+
     disp.play();
 }
 
