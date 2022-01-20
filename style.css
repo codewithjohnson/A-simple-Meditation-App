@@ -183,12 +183,12 @@ button:hover{
   }
 
   .switch{
-    bottom: 350px;
+    bottom: 320px;
   }
 }
 
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .down {
       display: flex;
       flex-direction: row;
@@ -208,4 +208,4 @@ button:hover{
   .switch{
     bottom: 350px;
   }
-}
+} */
