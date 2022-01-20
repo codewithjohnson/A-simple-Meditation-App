@@ -10,12 +10,14 @@ let src1V = "./media/nightV.mp4";
 let src1A = "./media/nightA.mp4";
 let src2V = "./media/BFV.mp4";
 let src2A = "./media/BFA.mp4";
+let src3V = "./media/vooo.mp4";
+let src3A = "./media/piano.mp4";
 
-let video_src = [src1V,src2V];
-let audio_src = [src1A,src2A];
+let video_src = [src1V,src2V,src3V];
+let audio_src = [src1A,src2A,src3A];
 
 
-random = Math.floor(Math.random()*2);
+random = Math.floor(Math.random()*3);
 video.src = video_src[random];
 audio.src = audio_src[random];
 
@@ -51,8 +53,7 @@ function stopFunc(){
 
 
 function shuffle(){
-    console.log('it works');
-    rand = Math.floor(Math.random()*2);
+    rand = Math.floor(Math.random()*3);
     video.src = video_src[rand];
     audio.src = audio_src[rand];
     video.play();

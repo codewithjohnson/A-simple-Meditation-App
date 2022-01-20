@@ -181,22 +181,31 @@ button:hover{
   .btn-r{
     margin: 10px;
   }
+
+  .switch{
+    bottom: 350px;
+  }
 }
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 768px) {
     .down {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-around;
       align-items: center;
-    
-  }
+      width: 500px;
+    }
 
   .btn-l {
-    margin: 10px;
+    margin-left: 10px;
   }
 
   .btn-r{
     margin: 10px;
+  }
+
+  .switch{
+    bottom: 350px;
   }
 }
