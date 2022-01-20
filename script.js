@@ -53,12 +53,12 @@ function stopFunc(){
 
 
 function shuffle(){
-    disp.play();
+   
     rand = Math.floor(Math.random()*3);
     video.src = video_src[rand];
     audio.src = audio_src[rand];
     video.play();
     audio.play();
     btnPP.innerHTML ="Pause &#9208;";
-
+    disp.play();
 }
