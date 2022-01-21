@@ -27,75 +27,74 @@ body {
   position: relative;
 }
 
-h2{
+h2 {
   color: white;
-  font-size:35px;
-  opacity: 70%;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  opacity: 90%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
   text-align: center;
   letter-spacing: 5px;
 }
 
-p{
+p {
   color: white;
-  opacity:40%;
-  font-size:12px;
+  opacity: 60%;
+  font-size: 12px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 500;
   text-align: center;
-  letter-spacing:1px;
+  letter-spacing: 1px;
   margin-bottom: 30px;
-
 }
 .up {
   width: 80%;
   margin-bottom: 70px;
   border-bottom: 50px;
   position: relative;
-  z-index:-1;
+  z-index: -1;
 }
 
 .video {
   width: 100%;
   height: 100%;
-  border-radius:0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
 }
 
-.switch{
-  display:flex;
+.switch {
+  display: flex;
   position: absolute;
-  right:30px;
-  background-color:transparent;
-  width:50px;
-  height:50px;
-  justify-content:center ;
+  right: 30px;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
   align-items: center;
-  bottom:300px
+  bottom: 300px;
 }
 
-button{
-  width:50px;
-  height:50px;
+button {
+  width: 50px;
+  height: 50px;
   outline: none;
-  border:none;
+  border: none;
   background-color: transparent;
-  border:1px solid white;
+  border: 1px solid white;
   border-color: darkgrey;
-  border-radius:50%;
+  border-radius: 50%;
   cursor: pointer;
   transition: ease-in-out;
 }
 
-button:hover{
-  background-color:#000000;
-  color:white;
+button:hover {
+  background-color: #000000;
+  color: white;
 }
 
-.switch{
+.switch {
   border: 1px solid white;
   border-color: darkgrey;
-  border-radius:50%;
+  border-radius: 50%;
   z-index: 1;
 }
 
@@ -106,7 +105,6 @@ button:hover{
   align-items: center;
   padding: 20px 10px;
 }
-
 
 .btn-l {
   min-width: 130px;
@@ -124,7 +122,6 @@ button:hover{
   border: 2px solid #212529;
   background: #212529;
 }
-
 
 .btn-l:hover {
   background: #fff;
@@ -185,14 +182,17 @@ button:hover{
     overflow-y: hidden;
   }
 
-  h2{
-    font-size:24px;
+  h2 {
+    margin-top: 10px;
+    font-size: 24px;
   }
-  
-  p{
+
+  p {
+    font-size:10px;
     margin-top: 2px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
   }
+
   .down {
     display: flex;
     flex-direction: column;
@@ -204,15 +204,14 @@ button:hover{
     margin: 10px;
   }
 
-  .btn-r{
+  .btn-r {
     margin: 10px;
   }
 
-  .switch{
+  .switch {
     bottom: 320px;
   }
 }
-
 
 /* @media screen and (max-width: 768px) {
     .down {
