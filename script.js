@@ -48,6 +48,7 @@ function stopFunc() {
     audio.pause();
     video.currentTime = 0;
     btnPP.innerHTML = "Play &#9658;";
+    playpauseFunc();
     disp.play();
 }
 
