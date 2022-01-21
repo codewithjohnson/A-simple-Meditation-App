@@ -15,37 +15,35 @@ let src3A = "./media/piano.mp4";
 let src4V = "./media/vooo.mp4";
 let src4A = "./media/Project.mp4";
 
-let video_src = [src1V,src2V,src3V,src4V];
-let audio_src = [src1A,src2A,src3A,src4A];
+let video_src = [src1V, src2V, src3V, src4V];
+let audio_src = [src1A, src2A, src3A, src4A];
 
 
-random = Math.floor(Math.random()*4);
+random = Math.floor(Math.random() * 4);
 video.src = video_src[random];
-audio.src = audio_src[random];
-
+audio.src = audio_src[0];
 
 
 let start = 0;
-function playpauseFunc(){
-    if (start ===0){
+function playpauseFunc() {
+    if (start === 0) {
         start = 1;
-        video.play();
+    
         audio.play();
-        btnPP.innerHTML ="Pause &#9208;";
+        video.play();
+        btnPP.innerHTML = "Pause &#9208;";
         disp.play();
-    }
-
-    else{
+    } else {
         start = 0;
         video.pause();
         audio.pause();
-        btnPP.innerHTML ="Play &#9658;";
+        btnPP.innerHTML = "Play &#9658;";
         disp.play();
 
     }
 }
 
-function stopFunc(){
+function stopFunc() {
     video.pause();
     audio.pause();
     video.currentTime = 0;
@@ -54,13 +52,15 @@ function stopFunc(){
 }
 
 
-function shuffle(){
-   
-    rand = Math.floor(Math.random()*4);
+function shuffle() {
+    if (rand === rand) {
+        rand = rand + 1 || rand - 1;
+    }
+    var rand = Math.floor(Math.random() * 4);
     video.src = video_src[rand];
     audio.src = audio_src[rand];
     video.play();
     audio.play();
-    btnPP.innerHTML ="Pause &#9208;";
+    btnPP.innerHTML = "Pause &#9208;";
     disp.play();
 }
