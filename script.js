@@ -53,10 +53,11 @@ function stopFunc() {
 
 
 function shuffle() {
-    if (rand === rand) {
+    let previous = rand;
+    var rand = Math.floor(Math.random() * 4);
+    if (rand === previous) {
         rand = rand + 1 || rand - 1;
     }
-    var rand = Math.floor(Math.random() * 4);
     video.src = video_src[rand];
     audio.src = audio_src[rand];
     video.play();
