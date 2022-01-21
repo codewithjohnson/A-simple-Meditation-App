@@ -15,8 +15,8 @@ let src3A = "./media/piano.mp4";
 let src4V = "./media/vooo.mp4";
 let src4A = "./media/Project.mp4";
 
-let video_src = [src1V,src2V,src3V,src3V];
-let audio_src = [src1A,src2A,src3A,];
+let video_src = [src1V,src2V,src3V,src4V];
+let audio_src = [src1A,src2A,src3A,src4A];
 
 
 random = Math.floor(Math.random()*4);
