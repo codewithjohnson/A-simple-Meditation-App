@@ -21,7 +21,7 @@ let audio_src = [src1A, src2A, src3A, src4A];
 
 random = Math.floor(Math.random() * 4);
 video.src = video_src[random];
-audio.src = audio_src[0];
+audio.src = audio_src[random];
 
 
 let start = 0;

@@ -71,7 +71,7 @@ p {
   height: 50px;
   justify-content: center;
   align-items: center;
-  bottom: 300px;
+  bottom: 200px;
 }
 
 button {
@@ -213,17 +213,17 @@ button:hover {
   }
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .down {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-around;
       align-items: center;
       width: 500px;
     }
 
   .btn-l {
-    margin-left: 10px;
+    margin: 10px;
   }
 
   .btn-r{
@@ -231,6 +231,6 @@ button:hover {
   }
 
   .switch{
-    bottom: 350px;
+    bottom: 318px;
   }
-} */
+}
