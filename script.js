@@ -28,7 +28,6 @@ let start = 0;
 function playpauseFunc() {
     if (start === 0) {
         start = 1;
-    
         audio.play();
         video.play();
         btnPP.innerHTML = "Pause &#9208;";
@@ -54,11 +53,8 @@ function stopFunc() {
 
 
 function shuffle() {
-    let previous = rand;
-    var rand = Math.floor(Math.random() * 4);
-    if (rand === previous) {
-        rand = rand + 1 || rand - 1;
-    }
+    let rand = Math.floor(Math.random() * 4);
+    var current = rand;
     video.src = video_src[rand];
     audio.src = audio_src[rand];
     video.play();
